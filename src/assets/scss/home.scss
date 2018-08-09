@@ -1,0 +1,60 @@
+@import 'common.scss';
+
+.grid-content {
+  height: 80px;
+  .iconfont {
+    font-size: 34px;
+  }
+  h5 {
+    margin: 0;
+  }
+  span {
+    font-size: 10px;
+    color: #e3e3e3;
+  }
+  .icon-location {
+    color: skyblue;
+  }
+  .icon-coach {
+    color: green;
+  }
+  .icon-service {
+    color: red;
+  }
+}
+
+.border {
+  width: 100%;
+  height: 20px;
+  background-color: #e3e3e3;
+}
+
+.part {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #e3e3e3;
+  .title {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 2;
+    color: red;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      width: 20px;
+      height: 40px;
+      background-color: red;
+    }
+  }
+  i {
+    width: 60px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 2.8;
+    color: red;
+  }
+}
