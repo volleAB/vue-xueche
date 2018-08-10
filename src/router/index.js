@@ -12,30 +12,28 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: '首页',
-      component: Home,
-      children: [
-        {
-          path: 'coach',
-          name: '教练',
-          component: Coach
-        },
-        {
-          path: 'details',
-          name: '详情',
-          component: Details
-        },
-        {
-          path: 'mine',
-          name: '我的',
-          component: Mine
-        },
-        {
-          path: 'order',
-          name: '预约',
-          component: Order
-        }
-      ]
+      name: 'home',
+      component: Home
+    },
+    {
+      path: 'coach',
+      name: 'coach',
+      component: Coach
+    },
+    {
+      path: 'details',
+      name: 'details',
+      component: Details
+    },
+    {
+      path: 'mine',
+      name: 'mine',
+      component: Mine
+    },
+    {
+      path: 'order',
+      name: 'order',
+      component: Order
     }
   ]
 })

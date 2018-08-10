@@ -1,9 +1,9 @@
 <template>
   <div class="nav">
-    <div class="icon iconfont icon-home nav-item">首页</div>
-    <div class="icon iconfont icon-menu nav-item">教练</div>
-    <div class="icon iconfont icon-order nav-item">预约</div>
-    <div class="icon iconfont icon-mine nav-item">我的</div>
+    <div class="nav-item"><router-link :to="{ name: 'home' }"><i class="icon iconfont icon-home"></i>首页</router-link></div>
+    <div class="nav-item"><router-link :to="{ name: 'coach' }"><i class="icon iconfont icon-menu"></i>教练</router-link></div>
+    <div class="nav-item"><router-link :to="{ name: 'order' }"><i class="icon iconfont icon-order"></i>预约</router-link></div>
+    <div class="nav-item"><router-link :to="{ name: 'mine' }"><i class="icon iconfont icon-mine"></i>我的</router-link></div>
   </div>
 </template>
 
@@ -20,6 +20,23 @@
       width: 25%;
       padding: 4px 10px;
       box-sizing: border-box;
+      .iconfont {
+        padding: 0 18px;
+        font-size: 22px;
+        &:active {
+          color: rgb(0, 153, 255);
+        }
+      }
+      .icon-home {
+        font-size: 20px;
+        padding: 0 19px;
+      }
+      a {
+      color: #000000;
+      }
+      .router-link-active {
+        color: rgb(0, 153, 255);
+      }
     }
   }
 </style>
@@ -29,7 +46,7 @@ require('../assets/icon/iconfont.css')
 
 export default {
   data () {
-    return []
+    return {}
   },
   methods: {
 

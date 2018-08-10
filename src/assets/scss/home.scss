@@ -21,40 +21,63 @@
   .icon-service {
     color: red;
   }
-}
-
-.border {
-  width: 100%;
-  height: 20px;
-  background-color: #e3e3e3;
+  .icon-pan {
+    margin-left: 10px;
+    font-size: 60px;
+    color: rgb(96, 151, 44);
+  }
+  .icon-phone {
+    margin-left: 10px;
+    font-size: 60px;
+    color: rgb(44, 51, 151);
+  }
 }
 
 .part {
   width: 100%;
-  height: 40px;
   border-bottom: 1px solid #e3e3e3;
-  .title {
+  .p-title {
     position: relative;
-    width: 200px;
-    height: 40px;
-    font-size: 20px;
-    line-height: 2;
-    color: red;
-    &:before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: '';
-      width: 20px;
+    width: 100%;
+    border-bottom: 1px solid #e3e3e3;
+    .title {
+      display: inline-block;
+      width: 140px;
+      font-size: 20px;
+      line-height: 2;
+      color: red;
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 20px;
+        height: 40px;
+        background-color: red;
+      }
+    }
+    i {
+      width: 60px;
       height: 40px;
-      background-color: red;
+      font-size: 14px;
+      line-height: 2.8;
+      color: red;
     }
   }
-  i {
-    width: 60px;
-    height: 40px;
-    font-size: 14px;
-    line-height: 2.8;
-    color: red;
+}
+
+.part-item {
+  a {
+    color: #000000;
+  }
+  .coach-info {
+    .grid-content {
+      padding-top: 10px;
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+      }
+    }
   }
 }
