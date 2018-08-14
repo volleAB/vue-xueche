@@ -49,8 +49,12 @@ export default {
           price: '3000',
           pic: ''
         }
-      ]
+      ],
+      title: '教练'
     }
+  },
+  created () {
+    this.$store.state.title = '教练'
   }
 }
 </script>

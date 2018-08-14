@@ -89,11 +89,12 @@ export default {
           price: '3000',
           pic: ''
         }
-      ]
+      ],
+      title: '首页'
     }
   },
-  creaded () {
-
+  created () {
+    this.$store.state.title = '首页'
   },
   methods: {
 

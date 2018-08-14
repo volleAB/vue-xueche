@@ -1,6 +1,6 @@
 <template>
-  <div class="header">
-    <span>{{title}}</span>
+  <div class="header" @click="showTitle">
+    <span>{{this.$store.state.title}}</span>
   </div>
 </template>
 
@@ -23,7 +23,15 @@
 export default {
   data () {
     return {
-      title: this.$store.state.title
+      title: ''
+    }
+  },
+  created () {
+    this.title = this.$store.state.title
+  },
+  methods: {
+    showTitle () {
+      console.log(this.title, this.$store.state.title)
     }
   }
 }

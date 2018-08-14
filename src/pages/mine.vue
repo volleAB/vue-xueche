@@ -1,6 +1,5 @@
 <template>
   <div id="mine">
-    <comtitle/>
     <div class="user">
       <div class="user-button">
         <el-button type="primary">注册</el-button>
@@ -21,15 +20,11 @@
 </template>
 
 <script>
-import comtitle from '../components/header'
 require('../assets/scss/mine.scss')
 
 export default {
   data () {
     return {}
-  },
-  components: {
-    comtitle
   },
   created () {
     this.$store.state.title = '我的'

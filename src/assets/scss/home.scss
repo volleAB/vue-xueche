@@ -1,5 +1,9 @@
 @import 'common.scss';
 
+#home {
+  margin-top: 40px;
+}
+
 .grid-content {
   height: 80px;
   .iconfont {
@@ -80,4 +84,8 @@
       }
     }
   }
+}
+
+#coach {
+  margin-top: 40px;
 }

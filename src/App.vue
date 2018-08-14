@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <comtitle/>
     <router-view/>
     <comnav></comnav>
   </div>
@@ -7,11 +8,18 @@
 
 <script>
 import comnav from './components/nav'
+import comtitle from './components/header'
 
 export default {
   name: 'App',
+  data () {
+    return {}
+  },
   components: {
-    comnav
+    comnav,
+    comtitle
+  },
+  methods: {
   }
 }
 </script>
